@@ -1,0 +1,42 @@
+{
+  "name": "aeinbu-filters",
+  "version": "0.0.0",
+  "description": "Lightweight and non-intrusive aggregate functions to use with array reducers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ],
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "test-watch": "jest --config jestconfig.json --watch",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "version": "git add package.json",
+    "lint-autofix": "eslint --fix src/**/* tests/**/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeinbu/filters.git"
+  },
+  "keywords": [
+    "skip",
+    "take"
+  ],
+  "author": "Arjan Einbu <arjan@einbu.no>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aeinbu/filters/issues"
+  },
+  "homepage": "https://github.com/aeinbu/filters#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.4",
+    "typescript": "^5.8.3"
+  }
+}
